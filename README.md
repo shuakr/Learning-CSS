@@ -11,7 +11,7 @@ Welcome to **CSS Learning Repository**, a simple and effective way to explore CS
 ## 📖 How to Use This Repo
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/css-learning.git
+   git clone https://github.com/shuakr/learning.CSS.git
    ```
 2. Explore the files and start learning!
 3. Feel free to contribute with improvements or new examples.
