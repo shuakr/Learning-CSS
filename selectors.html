@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        h1
+        {
+            color: blue; /*Type: Element Selector (or Tag Selector)
+            🔹 This selects all <h1> elements(Only the first one because we used other selector options for other h1's.) and sets their text color to blue.*/
+        }
+
+        #h1Selector{
+            color: red; /*Type: ID Selector
+            🔹 This selects the element with the id "h1Selector" and changes its text color to red.
+            🔹 IDs are unique, meaning this style applies to only one specific element on the page.*/
+
+        }
+
+        *{
+            color: rgb(87, 5, 164); /*Type: Universal Selector (or Global Selector)
+            🔹 This applies to all elements on the page and changes their text color to rgb(87, 5, 164) (a shade of purple).
+            🔹 Since the universal selector affects everything, it overrides the previous styles, unless there is a more specific selector later.*/
+        }
+
+        .example{
+            color: chocolate; /*Type: Class Selector
+            🔹 This selects all elements that have the class "example" and sets their text color to chocolate brown.
+            🔹 Unlike ID selectors, multiple elements can share the same class.*/
+        }
+
+        a:hover{
+            color: hotpink; /*Type: Pseudo-Class Selector
+            🔹 This applies styling to <a> (anchor/link) elements only when they are hovered over with the mouse.
+            🔹 When a user hovers over a link, its text color changes to hot pink*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        CSS Selectors
+    </h1>
+    <hr>
+    <h1 id="h1Selector">
+        CSS Selectors
+    </h1>
+    <hr>
+    <h1 class="example">
+        CSS Selectors
+    </h1>
+
+    <a href="meetwithcss.html">
+        Click it!!!
+    </a>
+</body>
+</html>
+
+<!--Final Notes
+✔ CSS Specificity Order:
+1️⃣ ID Selector (#h1Selector) → Highest priority
+2️⃣ Class Selector (.example)
+3️⃣ Element Selector (h1)
+4️⃣ Universal Selector (*) → Lowest priority
+
+If multiple rules apply to the same element, the one with the highest specificity wins.-->
