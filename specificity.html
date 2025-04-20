@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        h5{
+            color: black;
+            color: darkblue; /*If you write a property at the same time in the same code block, the one above will remain dysfunctional.*/
+            width: 10px;
+            font-size: x-large;
+        }
+        div h5{ /*When you hover your cursor to the div h5 tag you will see "Selector Specificity Value" like (0,0,2). This value decides that which property is the primary one.*/
+            color: blueviolet;
+        }
+        .header{ 
+            color: green;
+        }
+
+        #header{
+            color: hotpink;
+        }
+        /*Highest to lowest priority: 
+        1) Only tags (h5)
+        2) Tags in Tag (div h5)
+        3) Class (header)
+        4) id ()*/
+    </style>
+</head>
+<body>
+    <div>
+        <h5 class="header" id="header">
+            Specificity
+        </h5>
+    </div>
+</body>
+</html>
