@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Sitilization</title>
+</head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Connects to Google Fonts early -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Preconnects to font files from another domain -->
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet"> <!-- Loads the Bungee Spice font -->
+<style> /*CSS style section starts*/
+    #txt{ /* Styles for the paragraph with id="txt" */
+        font-weight: 900; /*You can understand with the meanings for example: Weight,align,size...*/
+        text-align: center;
+        font-size: x-large;
+        font-family: 'Courier New', Courier, monospace; /*There are three different font families because if the first one doesn’t load properly, then the second one will. And if the second one fails too, then the third one will be used.*/
+    }
+
+    #lorem{
+        font-family: "Bungee Spice", sans-serif; /* Uses the Bungee Spice font, which we imported in the head section of the HTML.*/
+        font-weight: 400;
+        font-style: normal;
+    }
+</style>
+<body>
+    <p id="txt">
+        EXAMPLE TEXT
+    </p>
+    <p id="lorem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, voluptatibus natus maxime magnam assumenda amet fugit expedita velit, nesciunt eius tenetur delectus repellendus. Culpa ad fugit expedita molestiae quidem magni.
+    </p> <!-- This paragraph uses the Bungee Spice font style. -->
+</body>
+</html>
